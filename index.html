@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javascript Tip Calculator</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+  
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <div class="title">Javascript Tip Calculator</div>
+  <div class="percentPicker">
+    <h4>How much tip would you like to pay?</h4>
+    <input type="range" class="form-range" value="16" id="customRange1" oninput="showPercent();"/>
+    <p id="percentDisplay">16%</p>
+    <p onclick="nextPage();" class="nextBtn">Next</p>
+  </div>
+  <div class="checkTotal">
+    <h4>How much was the total of your bill?</h4>
+    <input type="number" placeholder="42.50" id="bill"/>
+    <p onclick="checkInput();" class="nextBtn">Calculate Tip</p>
+    
+  </div>
+  <div class="totalDisplay" onclick="startAgain();">
+    
+  </div>
+ </div>
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
